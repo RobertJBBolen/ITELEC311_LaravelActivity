@@ -26,8 +26,7 @@
                 <input type="text"
                     name="student_number"
                     class="form-control"
-                    value="{{ old('student_number', $student->student_number) }}"
-                    required>
+                    value="{{ old('student_number', $student->student_number) }}"required>
             </div>
 
             <div class="mb-3">
@@ -35,8 +34,7 @@
                 <input type="text"
                     name="first_name"
                     class="form-control"
-                    value="{{ old('first_name', $student->first_name) }}"
-                    required>
+                    value="{{ old('first_name', $student->first_name) }}"required>
             </div>
 
             <div class="mb-3">
@@ -44,8 +42,7 @@
                 <input type="text"
                     name="last_name"
                     class="form-control"
-                    value="{{ old('last_name', $student->last_name) }}"
-                    required>
+                    value="{{ old('last_name', $student->last_name) }}"required>
             </div>
 
             <div class="mb-3">
@@ -53,8 +50,7 @@
                 <input type="email"
                     name="email"
                     class="form-control"
-                    value="{{ old('email', $student->email)}}"
-                    required>
+                    value="{{ old('email', $student->email)}}"required>
             </div>
 
             <div class="mb-3">
@@ -62,15 +58,13 @@
                 <input type="text"
                     name="course"
                     class="form-control"
-                    value="{{ old('course', $student->course)}}"
-                    required>
+                    value="{{ old('course', $student->course)}}"required>
             </div>
-            
+
             <button type="submit" class="btn btn-success">
                 Update Student
             </button>
-            <a href="{{ route('students.index') }}"
-                class="btn btn-secondary">
+            <a href="{{ route('students.index') }}"class="btn btn-secondary">
                 Cancel
             </a>
         </form>

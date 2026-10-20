@@ -26,13 +26,11 @@
         <p><strong>Course:</strong>
             {{ $student->course }}
         </p>
-        
-        <a href="{{ route('students.edit', $student) }}"
-            class="btn btn-warning">
+
+        <a href="{{ route('students.edit', $student) }}"class="btn btn-warning">
             Edit Student
         </a>
-        <a href="{{ route('students.index') }}"
-            class="btn btn-secondary">
+        <a href="{{ route('students.index') }}"class="btn btn-secondary">
             Back to List
         </a>
     </div>
